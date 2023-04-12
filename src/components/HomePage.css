@@ -1,0 +1,36 @@
+.homepage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .homepage p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .homepage h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .homepage ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .homepage li {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .homepage li span {
+    color: #777;
+  }
+  
