@@ -1,6 +1,7 @@
 # My React Blog
 
 Welcome to my React blog! This is where I share my thoughts on various topics related to React and web development.
+https://h4ruraka.github.io/my_blog/
 
 ## Table of Contents
 
