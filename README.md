@@ -34,5 +34,3 @@ If you find a bug or want to contribute to this blog, please feel free to create
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-
--- Wroten by gpt
