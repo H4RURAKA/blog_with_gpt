@@ -1,109 +1,284 @@
 /* src/App.css */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
 }
 
 .App {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+	color: #333;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	color: #777;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	color: #333;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 p {
-  margin-bottom: 1rem;
-  word-break: break-all;  
-  text-align: left;
+	margin-bottom: 1rem;
+	word-break: break-all;
+	text-align: left;
+	color: #333;
 }
 
 a {
-  text-decoration: none;
-  color: #1e90ff;
+	text-decoration: none;
+	color: #1e90ff;
+	transition: color 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+	color: #1674d2;
 }
 
 /* src/App.css */
 .post-card {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  transition: box-shadow 0.3s, transform 0.3s;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	transition: box-shadow 0.3s, transform 0.3s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
 }
 
 .post-card-content {
-  margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 /* src/App.css */
 .container {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .main {
-  flex: 3;
-  margin-right: 1rem;
+	flex: 3;
+	margin-right: 1rem;
 }
 
 .sidebar {
-  flex: 1;
-  position: sticky;
-  top: 1rem;
+	flex: 1;
+	position: sticky;
+	top: 1rem;
+	width: 100%;
 }
 
 .post-date {
-  font-size: 0.9rem;
-  text-align: right;
-  color: #777;
+	font-size: 0.9rem;
+	text-align: right;
+	color: #777;
 }
 
 /* src/App.css */
 .post-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .profile-card {
-  padding: 1rem;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  text-align: center;
+	padding: 1rem;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	text-align: center;
+	position: sticky;
+	top: 100px;
+	transition: transform 0.5s ease-out;
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
-  margin-bottom: -0.5rem;
-  border-radius: 50%;
-  object-fit: cover;
+	width: 100px;
+	height: 100px;
+	margin-bottom: -0.5rem;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.profile-image:hover {
+	transform: scale(1.05);
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 1rem;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.3s;
+}
+
+.icon:hover {
+	transform: scale(1.2);
+}
+
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.category-btn {
+	background-color: #b3b3b3;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+	box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+	transform: translateY(-2px);
+}
+
+.category-btn:focus {
+	outline: none;
+	transform: translateY(-2px);
+}
+
+.category-All {
+	background-color: #1e90ff;
+}
+
+.category-Inform {
+	background-color: #ff6347;
+}
+
+.category-JavaScript {
+	background-color: #ff47f3;
+}
+
+.category-DataStructure {
+	background-color: #32cd32;
+}
+
+.category-aaaa {
+	background-color: #ffdb58;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #121212;
+		color: #ffffff;
+	}
+
+	.App {
+		background-color: #1e1e1e;
+		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+	}
+
+	h1,
+	h2,
+	h3 {
+		color: #ffffff;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	p {
+		color: #ffffff;
+	}
+
+	a {
+		color: #1e90ff;
+	}
+
+	a:hover {
+		color: #1674d2;
+	}
+
+	.post-card {
+		background-color: #1e1e1e;
+		border: 1px solid #333;
+		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+	}
+
+	.post-card:hover {
+		box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+		transform: translateY(-2px);
+	}
+
+	.profile-card {
+		background-color: #333;
+	}
+}
+
+/* 기존 CSS 코드 */
+/* ... */
+
+/* 모바일 환경에서 적용할 스타일 */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.main {
+		margin-right: 0;
+		position: relative; /* 추가 */
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	.App {
+		position: relative; /* 추가 */
+	}
+
+	.profile-card {
+		display: block; /* 수정 */
+	}
+
+	.profile-image {
+		width: 50px;
+		height: 50px;
+	}
 }

@@ -1,0 +1,86 @@
+/* src/components/Post.css */
+.post-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+.post-title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+.post-date {
+	font-size: 1.2rem;
+	color: #888;
+	margin-bottom: 1rem;
+}
+
+.post-content {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+.post-box {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 2rem;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	width: 80%;
+	max-width: 800px;
+}
+
+/* src/components/Post.css */
+.table-of-contents {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.table-of-contents ol {
+	padding-left: 1.5rem;
+}
+
+.table-of-contents li {
+	cursor: pointer;
+	display: block;
+	padding: 0 4px; /* padding 추가 */
+	margin-bottom: 4px; /* margin 추가 */
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.table-of-contents li:hover {
+	color: #007bff;
+	background-color: rgba(0, 123, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	.post-container {
+		color: #f4f4f4;
+	}
+
+	.post-title {
+		color: #e1e1e1;
+	}
+
+	.post-date {
+		color: #aaa;
+	}
+
+	.post-content {
+		color: #ddd;
+	}
+
+	.post-box {
+		border: 1px solid #444;
+		background-color: #222;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+
+	.table-of-contents li:hover {
+		color: #82b1ff;
+		background-color: rgba(130, 177, 255, 0.2);
+	}
+}

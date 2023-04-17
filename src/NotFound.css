@@ -1,0 +1,41 @@
+.notfound-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+}
+
+.notfound-title {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #333;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-text {
+	font-size: 18px;
+	color: #333;
+	font-weight: 300;
+	text-align: center;
+}
+
+.notfound-emoji {
+	font-size: 100px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+	.notfound-container {
+		background-color: #222;
+	}
+
+	.notfound-title,
+	.notfound-text,
+	.notfound-emoji {
+		color: #ffffff;
+	}
+}
